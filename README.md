@@ -14,9 +14,9 @@ Reference from: ambari-server/src/main/resources/common-service/FLUME/1.4.0.2
 
   1. you can change version in follow files:
 
-    `buildrpm/buildrpm.sh`
+    buildrpm/buildrpm.sh
 
-    `buildrpm/rpmbuild/SPECS/flume.spec`
+    buildrpm/rpmbuild/SPECS/flume.spec
 
   2. install rpmbuild on your host `yum install rpmbuild -y`
 
