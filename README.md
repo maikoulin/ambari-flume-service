@@ -28,7 +28,7 @@ Reference from: ambari-server/src/main/resources/common-service/FLUME/1.4.0.2
 
 **install：**
 
-1. use flume.spec build flume rpm
+1. use buildrpm.sh build flume rpm
 2. upload flume rpm to your repo
 3. copy FLUME to `/var/lib/ambari-server/resources/stacks/HDP/3.1/services/`
 4. `ambari-server restart`
