@@ -2,7 +2,7 @@
 
 Reference from: ambari-server/src/main/resources/common-service/FLUME/1.4.0.2
 
-test environment：
+**test environment：**
 
 - ambari 2.7.3
 
@@ -10,7 +10,24 @@ test environment：
 
 - flume 1.9.0
 
-install：
+**rpmbuild:**
+
+  1. you can change version in follow files:
+
+    `buildrpm/buildrpm.sh`
+
+    `buildrpm/rpmbuild/SPECS/flume.spec`
+
+  2. install rpmbuild on your host `yum install rpmbuild -y`
+
+  3. copy buildrpm dir to your host
+
+  4. `cd buildrpm`
+
+  5. `sh buildrpm.sh`
+
+**install：**
+
 1. use flume.spec build flume rpm
 2. upload flume rpm to your repo
 3. copy FLUME to `/var/lib/ambari-server/resources/stacks/HDP/3.1/services/`
@@ -18,8 +35,7 @@ install：
 5. to ambari web add service ,the service will in the service list
 6. good luck
 
-
-注意：
+**注意：**
 
 - 在 flume.spec 中最好将flume安装到 `/usr/hdp/current/flume-server`
 
