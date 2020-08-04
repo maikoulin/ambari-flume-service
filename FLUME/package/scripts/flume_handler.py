@@ -44,7 +44,7 @@ class FlumeHandler(Script):
 class FlumeHandlerLinux(FlumeHandler):
   def install(self, env):
     import params
-    user_home=format("/home/{params.flume_user}")
+    user_home="/home/"+str(params.flume_user)
     try: pwd.getpwnam(params.flume_user)
     except KeyError: User(params.flume_user,
         home=user_home,
